@@ -1,13 +1,24 @@
 # VALUE ITERATION ALGORITHM
 
 ## AIM
-Write the experiment AIM.
+The aim of the program is to find the best way for an agent to navigate a grid environment by using the Value Iteration algorithm. 
 
 ## PROBLEM STATEMENT
-Explain the problem statement.
+The goal is to determine the optimal policy for an agent navigating through a grid environment, where each state represents a grid cell, and actions move the agent in one of four directions (up, down, left, or right). The task is to maximize the expected reward, leading the agent to the goal state while avoiding obstacles.
 
 ## POLICY ITERATION ALGORITHM
-Include the steps involved in the value iteration algorithm
+### Step 1: 
+Set the value of each state to 0 (initial guess).
+### Step 2: 
+Look at all the actions you can take from that state (like moving up, down, left, or right).
+### Step 3: 
+Calculate the expected value of each action (i.e., how good that action is based on its possible results).
+### Step 4: 
+Pick the action that gives the highest value and update the value of the state with that number.
+### Step 5: 
+Keep updating the values for all states until the difference between the old and new values is very small 
+### Step 6: 
+Once the values have stabilized, go through each state again and pick the action that leads to the highest value. This gives you the optimal action (policy) for each state.
 
 ## VALUE ITERATION FUNCTION
 ### Name: Meetha Prabhu
@@ -137,5 +148,4 @@ print_state_value_function(V_best_v, P, prec=4)
 
 
 ## RESULT:
-
-Write your result here
+Thus the program to find th optimal policy using value iteration is implemented successfully
